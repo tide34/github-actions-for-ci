@@ -16,7 +16,7 @@ jobs:
           npm run build
       - uses: actions/upload-artifact@main
         with:
-          needs: build
+    needs: build
           path: public/
 
   test:
